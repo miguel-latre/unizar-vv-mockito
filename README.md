@@ -11,13 +11,13 @@ Este proyecto contiene:
 - Los ejemplos de la clase de teoría, en el paquete `es.unizar.eina.vv6f.pruebas.mockito.ejemplo`.
   
   Estos ejemplos están basados en la página web «Unit tests with Mockito – Tutorial» de Lars Vogel y Fabian Pfaff. _Vogella_. Version 1.9. 10-4-2017. http://www.vogella.com/tutorials/Mockito/article.html
-  [accedido el 28-4-2020].
+  [accedido el 28-4-2021].
   
 - Esqueleto para el problema de _mocking_ con el patrón sujeto
   observador (paquete `es.unizar.eina.vv6f.pruebas.mockito.ejercicio1`)
   
   Este problema está basado en el tutorial «Getting Started» de _JMock_. 2012.
-  http://jmock.org/getting-started.html [accedido el 29-4-2020].
+  http://jmock.org/getting-started.html [accedido el 28-4-2021].
     
 - Esqueleto para el problema de _stubbing_ (paquete `es.unizar.eina.vv6f.pruebas.mockito.ejercicio2`)
 
@@ -30,7 +30,7 @@ En proyecto suministrado en este repositorio no está configurado todavía para 
 Para configurarlo:
    
 - Project Structure | Libraries | + (New Project Library) | From Maven…
-- Buscad org.mockito:mockito-core:3.3.3 
+- Buscad org.mockito:mockito-core:3.9.0 
 - Seleccionad Sources y JavaDocs
     
 Una vez configurado, comprobad que funciona ejecutando los test del paquete `es.unizar.eina.vv6f.pruebas.mockito.ejemplo` 
@@ -43,6 +43,8 @@ Implementación del patrón sujeto-observador en el paquete `es.unizar.eina.vv6f
     - Suscribidlo a un objeto de la clase `MyPublisher`.
     - Publicad un mensaje en el objeto de la clase `MyPublisher`.
     - Comprobad sobre el _mock_ si la interacción ha sido correcta.
+- Ejecutad la prueba. Como no hemos implementado nada, fallará.
+  Observad los menajes de error que genera Mockito. 
 - Implementad y corregid la clase `MyPublisher` hasta que el test 
   no detecte fallos.
 - Añadid pruebas adicionales que cubran los siguientes escenarios:
@@ -63,7 +65,8 @@ tener que generar ficheros reales para las pruebas
 
 1. Escribid tests en JUnit para probar el método `escribirResumen`,
 recorriendo los cuatro caminos identificados en la clase de
-pruebas de caminos con profundidad:
+pruebas de caminos con profundidad 2 (transparencias 115 y siguientes del tema 
+de técnicas (2b)):
     - Fichero vacío (con 0 ventas)
     - Fichero con solo una venta
     - Fichero con dos ventas de dos clientes distintos

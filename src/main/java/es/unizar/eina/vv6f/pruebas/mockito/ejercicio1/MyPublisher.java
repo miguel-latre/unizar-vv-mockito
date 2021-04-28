@@ -6,7 +6,7 @@ import java.util.List;
 // TODO Escribir pruebas para esta clase en JUnit4 con Mockito
 public class MyPublisher implements Publisher {
 	
-	private List<Subscriber> subscribers = new ArrayList<Subscriber>();
+	private List<Subscriber> subscribers = new ArrayList<>();
 
 	@Override
 	public void add(Subscriber subscriber) {
