@@ -59,7 +59,7 @@ Implementación del patrón sujeto-observador en el paquete `es.unizar.eina.vv6f
        
 ### Ejercicio 2: _Stubbing_
 
-Sustitución de la clase `DataInputStream` en el paquete
+Sustitución de la interfaz `DataInput` en el paquete
 `es.unizar.eina.vv6f.pruebas.mockito.ejercicio2`, para evitar
 tener que generar ficheros reales para las pruebas
 
