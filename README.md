@@ -4,20 +4,20 @@
 Proyecto IntelliJ de partida para la realización de un par de ejercicios con
 [Mockito](https://site.mockito.org/) en clase de [Verificación y Validación](https://estudios.unizar.es/estudio/asignatura?anyo_academico=2019&asignatura_id=30244&estudio_id=20190148&centro_id=110&plan_id_nk=439)
 del [Grado en Ingeniería Informática](http://webdiis.unizar.es/~jresano/) de
-la [Universidad de de Zaragoza](https://www.unizar.es/).
+la [Universidad de Zaragoza](https://www.unizar.es/).
 
 Este proyecto contiene:
 
 - Los ejemplos de la clase de teoría, en el paquete `es.unizar.eina.vv6f.pruebas.mockito.ejemplo`.
   
   Estos ejemplos están basados en la página web «Unit tests with Mockito – Tutorial» de Lars Vogel y Fabian Pfaff. _Vogella_. Version 1.9. 10-4-2017. http://www.vogella.com/tutorials/Mockito/article.html
-  [accedido el 28-4-2021].
+  [accedido el 5-4-2022].
   
 - Esqueleto para el problema de _mocking_ con el patrón sujeto
   observador (paquete `es.unizar.eina.vv6f.pruebas.mockito.ejercicio1`)
   
   Este problema está basado en el tutorial «Getting Started» de _JMock_. 2012.
-  http://jmock.org/getting-started.html [accedido el 28-4-2021].
+  http://jmock.org/getting-started.html [accedido el 5-4-2022].
     
 - Esqueleto para el problema de _stubbing_ (paquete `es.unizar.eina.vv6f.pruebas.mockito.ejercicio2`)
 
@@ -30,15 +30,15 @@ En proyecto suministrado en este repositorio no está configurado todavía para 
 Para configurarlo:
    
 - Project Structure | Libraries | + (New Project Library) | From Maven…
-- Buscad org.mockito:mockito-core:3.9.0 
-- Seleccionad Sources y JavaDocs
+- Buscad org.mockito:mockito-core:4.4.0 
+- Seleccionad _Sources_, _JavaDocs_ y _Annotations_
     
 Una vez configurado, comprobad que funciona ejecutando los test del paquete `es.unizar.eina.vv6f.pruebas.mockito.ejemplo` 
 
 ### Ejercicio 1: _Mocking_ 
 Implementación del patrón sujeto-observador en el paquete `es.unizar.eina.vv6f.pruebas.mockito.ejercicio1`
    
-- Escribid una prueba JUnit4 para la clase `MyPublisher`:
+- Escribid una prueba JUnit para la clase `MyPublisher`:
     - Cread un objeto _mock_ de la interfaz `Subscriber`.
     - Suscribidlo a un objeto de la clase `MyPublisher`.
     - Publicad un mensaje en el objeto de la clase `MyPublisher`.
