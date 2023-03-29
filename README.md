@@ -10,14 +10,14 @@ Este proyecto contiene:
 
 - Los ejemplos de la clase de teoría, en el paquete `es.unizar.eina.vv6f.pruebas.mockito.ejemplo`.
   
-  Estos ejemplos están basados en la página web «Unit tests with Mockito – Tutorial» de Lars Vogel y Fabian Pfaff. _Vogella_. Version 1.9. 10-4-2017. http://www.vogella.com/tutorials/Mockito/article.html
-  [accedido el 5-4-2022].
+  Estos ejemplos están basados en la página web «Unit tests with Mockito – Tutorial» de Lars Vogel y Fabian Pfaff. _Vogella_. Version 1.9. 10-4-2017. https://www.vogella.com/tutorials/Mockito/article.html
+  [accedido el 29-3-2023].
   
 - Esqueleto para el problema de _mocking_ con el patrón sujeto
   observador (paquete `es.unizar.eina.vv6f.pruebas.mockito.ejercicio1`)
   
   Este problema está basado en el tutorial «Getting Started» de _JMock_. 2012.
-  http://jmock.org/getting-started.html [accedido el 5-4-2022].
+  http://jmock.org/getting-started.html [accedido el 29-3-2023].
     
 - Esqueleto para el problema de _stubbing_ (paquete `es.unizar.eina.vv6f.pruebas.mockito.ejercicio2`)
 
@@ -30,7 +30,7 @@ En proyecto suministrado en este repositorio no está configurado todavía para 
 Para configurarlo:
    
 - Project Structure | Libraries | + (New Project Library) | From Maven…
-- Buscad org.mockito:mockito-core:4.4.0 
+- Buscad org.mockito:mockito-core:5.2.0 
 - Seleccionad _Sources_, _JavaDocs_ y _Annotations_
     
 Una vez configurado, comprobad que funciona ejecutando los test del paquete `es.unizar.eina.vv6f.pruebas.mockito.ejemplo` 
@@ -55,7 +55,7 @@ Implementación del patrón sujeto-observador en el paquete `es.unizar.eina.vv6f
         - Comprobad que los dos _mocks_ reciben el mensaje.
     2. Dos _mocks_ y dos mensajes distintos a ambos
     3. Dos _mocks_ y dos mensajes, pero entre la suscripción del 
-       primer y el segundo _mock_, el `Publisher` publica el primer mensaje.
+       primer y el segundo _mock_, el `Publisher` publica el primer mensaje. 
        
 ### Ejercicio 2: _Stubbing_
 
