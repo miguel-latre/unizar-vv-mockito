@@ -53,7 +53,7 @@ Implementación del patrón sujeto-observador en el paquete `es.unizar.eina.vv6f
         - Dos _mocks_ de la interfaz Subscriber se suscriben al `Publisher`.
         - El `Publisher` publica un mensaje.
         - Comprobad que los dos _mocks_ reciben el mensaje.
-    2. Dos _mocks_ y dos mensajes distintos a ambos
+    2. Dos _mocks_ y dos mensajes a cada uno de ellos.
     3. Dos _mocks_ y dos mensajes, pero entre la suscripción del 
        primer y el segundo _mock_, el `Publisher` publica el primer mensaje. 
        
