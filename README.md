@@ -11,13 +11,13 @@ Este proyecto contiene:
 - Los ejemplos de la clase de teoría, en el paquete `es.unizar.eina.vv6f.pruebas.mockito.ejemplo`.
   
   Estos ejemplos están basados en la página web «Unit tests with Mockito – Tutorial» de Lars Vogel y Fabian Pfaff. _Vogella_. Version 1.9. 10-4-2017. https://www.vogella.com/tutorials/Mockito/article.html
-  [accedido el 29-3-2023].
+  [accedido el 19-3-2024].
   
 - Esqueleto para el problema de _mocking_ con el patrón sujeto
   observador (paquete `es.unizar.eina.vv6f.pruebas.mockito.ejercicio1`)
   
   Este problema está basado en el tutorial «Getting Started» de _JMock_. 2012.
-  http://jmock.org/getting-started.html [accedido el 29-3-2023].
+  http://jmock.org/getting-started.html [accedido el 19-3-2024].
     
 - Esqueleto para el problema de _stubbing_ (paquete `es.unizar.eina.vv6f.pruebas.mockito.ejercicio2`)
 
