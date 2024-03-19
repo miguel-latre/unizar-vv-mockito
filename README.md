@@ -30,7 +30,7 @@ En proyecto suministrado en este repositorio no está configurado todavía para 
 Para configurarlo:
    
 - Project Structure | Libraries | + (New Project Library) | From Maven…
-- Buscad org.mockito:mockito-core:5.2.0 
+- Buscad org.mockito:mockito-core:5.11.0 
 - Seleccionad _Sources_, _JavaDocs_ y _Annotations_
     
 Una vez configurado, comprobad que funciona ejecutando los test del paquete `es.unizar.eina.vv6f.pruebas.mockito.ejemplo` 
