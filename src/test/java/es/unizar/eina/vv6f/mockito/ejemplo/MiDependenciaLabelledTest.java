@@ -10,12 +10,12 @@ import static org.mockito.Mockito.*;
 
 /**
  * Basado en: Lars Vogel, Fabian Pfaff. «Unit tests with Mockito – Tutorial».
- * Vogella. Version 1.9. 10-4-2017.
+ * Vogella. Version 2.3,16.08.2021.
  * <a href="http://www.vogella.com/tutorials/Mockito/article.html">Unit tests with Mockito - Tutorial</a>
  * [accedido el 19-3-2024]
  */
 @RunWith(MockitoJUnitRunner.class)
-public class MiDependenciaAnotadoTest {
+public class MiDependenciaLabelledTest {
 
     @Mock
     private MiDependencia mock;
@@ -45,5 +45,6 @@ public class MiDependenciaAnotadoTest {
         verify(mock, atLeast(2)).obtenerId(); // called at least twice
         verify(mock, atMost(3)).obtenerId(); // called at most 3 times
         verify(mock, times(5)).llamar5veces(); // called five times
+        verifyNoMoreInteractions(mock);
     }
 }

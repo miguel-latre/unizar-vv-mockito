@@ -14,7 +14,7 @@ import static org.mockito.Mockito.*;
 
 /**
  * Basado en: Lars Vogel, Fabian Pfaff. «Unit tests with Mockito – Tutorial».
- * Vogella. Version 1.9. 10-4-2017. 
+ * Vogella. Version 2.3,16.08.2021.
  * <a href="http://www.vogella.com/tutorials/Mockito/article.html">Unit tests with Mockito - Tutorial</a>
  * [accedido el 19-3-2024]
  */
@@ -138,5 +138,6 @@ public class MiDependenciaTest {
         verify(mock, atLeast(2)).obtenerId();   // el método «obtenerId» se invocó al menos 2 veces
         verify(mock, atMost(3)).obtenerId();    // el método «obtenerId» se invocó como mucho 3 veces
         verify(mock, times(5)).llamar5veces();  // el método «llamar5veces» se exactamente 5 veces
+        verifyNoMoreInteractions(mock);
     }
 }
