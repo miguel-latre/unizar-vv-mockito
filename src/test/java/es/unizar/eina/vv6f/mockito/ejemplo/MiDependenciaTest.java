@@ -1,6 +1,6 @@
 package es.unizar.eina.vv6f.mockito.ejemplo;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.io.IOException;
@@ -8,7 +8,8 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.Iterator;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 
@@ -47,6 +48,7 @@ public class MiDependenciaTest {
 
 
     // Demonstrates the return of multiple values
+    @SuppressWarnings("rawtypes")
     @Test
     public void testMoreThanOneReturnValue_1()  {
         Iterator iterator = mock(Iterator.class);
@@ -57,6 +59,7 @@ public class MiDependenciaTest {
 
 
     // Demonstrates the return of multiple values
+    @SuppressWarnings("rawtypes")
     @Test
     public void testMoreThanOneReturnValue_2()  {
         Iterator iterator = mock(Iterator.class);
@@ -67,6 +70,7 @@ public class MiDependenciaTest {
 
 
     // this test demonstrates how to return values based on the input
+    @SuppressWarnings({"rawtypes", "unchecked"})
     @Test
     public void testReturnValueDependentOnMethodParameter()  {
         Comparable c = mock(Comparable.class);
@@ -77,6 +81,7 @@ public class MiDependenciaTest {
     }
 
 
+    @SuppressWarnings({"rawtypes", "unchecked"})
     @Test
     public void testReturnValueIndependentOnMethodParameter()  {
         Comparable c = mock(Comparable.class);
@@ -87,6 +92,7 @@ public class MiDependenciaTest {
 
 
     // return a value based on the type of the provide parameter
+    @SuppressWarnings({"rawtypes", "unchecked"})
     @Test
     public void testReturnValueInDependentOnMethodClass()  {
         Comparable c= mock(Comparable.class);
@@ -101,15 +107,15 @@ public class MiDependenciaTest {
 
 
     // this test demonstrates how use doThrow
-    @Test(expected = IOException.class)
+    @Test
     public void testForIOException() throws IOException {
-        // create an configure stub
+        // create a configure stub
         OutputStream stubStream = mock(OutputStream.class);
         doThrow(new IOException()).when(stubStream).close();
 
         // use stub
         OutputStreamWriter streamWriter = new OutputStreamWriter(stubStream);
-        streamWriter.close();
+        assertThrows(IOException.class, streamWriter::close);
     }
 
 
