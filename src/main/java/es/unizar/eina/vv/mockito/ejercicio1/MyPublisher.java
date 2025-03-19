@@ -1,4 +1,4 @@
-package es.unizar.eina.vv6f.mockito.ejercicio1;
+package es.unizar.eina.vv.mockito.ejercicio1;
 
 import java.util.ArrayList;
 import java.util.List;

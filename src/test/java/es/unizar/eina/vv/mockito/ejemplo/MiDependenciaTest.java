@@ -1,4 +1,4 @@
-package es.unizar.eina.vv6f.mockito.ejemplo;
+package es.unizar.eina.vv.mockito.ejemplo;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

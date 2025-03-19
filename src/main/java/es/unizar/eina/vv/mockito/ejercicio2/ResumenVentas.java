@@ -1,4 +1,4 @@
-package es.unizar.eina.vv6f.mockito.ejercicio2;
+package es.unizar.eina.vv.mockito.ejercicio2;
 
 import java.io.DataInput;
 import java.io.DataInputStream;

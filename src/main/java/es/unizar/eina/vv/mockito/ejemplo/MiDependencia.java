@@ -1,4 +1,4 @@
-package es.unizar.eina.vv6f.mockito.ejemplo;
+package es.unizar.eina.vv.mockito.ejemplo;
 
 public class MiDependencia {
     public int obtenerId() {
